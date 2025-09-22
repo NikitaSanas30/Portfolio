@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="main-container mayur bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800">
       <section className="main-section ">
         <Navbar />
         <div className="container h-screen flex flex-col justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-          <div className="main-text-div flex justify-center w-1/2">
+          <div className="main-text-div flex justify-center w-md-1/2 w-full px-9 py-9">
             <div className="text-content flex flex-col justify-start items-start">
               <h2 className="text-lg mb-2">👋 Hello, I’m Nikita</h2>
-              <h1 className="font-['Montserrat'] text-6xl font-extrabold leading-13">
+              <h1 className="font-['Montserrat'] text-sm-3xl text-md-6xl font-extrabold leading-13">
                 Frontend Developer
               </h1>
               <h3 className="font-['Montserrat'] text-3xl text-gray-200 font-semibold">
