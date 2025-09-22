@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="main-container mayur bg-gradient-to-b from-gray-900 to-gray-800">
       <section className="main-section ">
         <Navbar />
         <div className="container h-screen flex flex-col justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
