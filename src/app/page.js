@@ -7,11 +7,11 @@ export default function Home() {
     <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800">
       <section className="main-section ">
         <Navbar />
-        <div className="container h-screen flex flex-col justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-          <div className="main-text-div flex justify-center w-md-1/2 w-full px-9 py-9">
+        <div className="container h-screen flex flex-col-reverse  justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+          <div className="main-text-div flex md:justify-between w-md-1/2 w-full px-9 py-9">
             <div className="text-content flex flex-col justify-start items-start">
               <h2 className="text-lg mb-2">👋 Hello, I’m Nikita</h2>
-              <h1 className="font-['Montserrat'] text-sm-3xl text-md-6xl font-extrabold leading-13">
+              <h1 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
                 Frontend Developer
               </h1>
               <h3 className="font-['Montserrat'] text-3xl text-gray-200 font-semibold">
@@ -77,14 +77,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="main-img-div flex justify-center w-1/2 items-center h-full">
-            <div className="profile-img flex pt-16 justify-center h-full">
+          <div className="main-img-div flex justify-end md:justify-center w-1/2 items-end md:items-center h-full">
+            <div className="profile-img flex pt-16 justify-end md:justify-center h-full">
               <img
-                src="/images/NS_logo.jpg"
+                src="/images/profile-img.jpg"
                 alt="profile-img"
-                className="w-[80%] h-[75%]"
+                className="md:w-[90%] md:h-[80%] md:rounded-b-[7rem] md:rounded-tl-[9rem]"
               />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className='about-section'>
+        <div className='about-container'>
+          <div className='about-img-div'>
+            <div className='about-img'>
+              <img src='' className='' alt='about-img'/>
+            </div>
+          </div>
+          <div className='about-text'>
+            <p>about</p>
+            <h3>about div</h3>
           </div>
         </div>
       </section>
@@ -92,5 +105,4 @@ export default function Home() {
   );
 }
 
-//  <h1 className="font-['Montserrat'] text-5xl font-extrabold leading-13">Frontend Developer Crafting digital experiences</h1>
-//           <p className="font-['Inter'] text-gray-600 mt-2 max-w-xl">Design & build modern, modern, responsive, and user-friendly<br></br> web applications with a passion for clean code and user centered design.</p>
+
