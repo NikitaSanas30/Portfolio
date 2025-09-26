@@ -49,7 +49,7 @@ export default function Home() {
                     ></path>
                   </svg>
                 </a>
-                 <a
+                <a
                   role="button"
                   className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
                   title="payment"
@@ -77,25 +77,34 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="main-img-div flex justify-end md:justify-center w-1/2 items-end md:items-center h-full">
-            <div className="profile-img flex pt-16 justify-end md:justify-center h-full">
+          {/* <div className="main-img-div flex justify-end md:justify-center w-1/2 items-end md:items-center">
+            <div className="profile-img flex pt-16 justify-end md:justify-center">
               <img
                 src="/images/profile-img.jpg"
                 alt="profile-img"
-                className="md:w-[90%] md:h-[80%] md:rounded-b-[7rem] md:rounded-tl-[9rem]"
+                className="md:w-[90%] md:h-[80%] md:rounded-b-[7rem] md:rounded-tl-[9rem]" 
+              />
+            </div>
+          </div> */}
+          <div className="main-img-div w-full h-full">
+            <div className="profile-img  w-full h-full flex justify-end">
+              <img
+                src="/images/profile-img.jpg"
+                alt="profile-img"
+                className="w-[85%] md:w-[100%] h-[74%] md:h-[90%] md:rounded-tl-[30rem] rounded-bl-[20rem]  mt-7.5 md:mt-0" 
               />
             </div>
           </div>
         </div>
       </section>
-      <section className='about-section'>
-        <div className='about-container'>
-          <div className='about-img-div'>
-            <div className='about-img'>
-              <img src='' className='' alt='about-img'/>
+      <section className="about-section">
+        <div className="about-container">
+          <div className="about-img-div">
+            <div className="about-img">
+              <img src="" className="" alt="about-img" />
             </div>
           </div>
-          <div className='about-text'>
+          <div className="about-text">
             <p>about</p>
             <h3>about div</h3>
           </div>
@@ -104,5 +113,3 @@ export default function Home() {
     </div>
   );
 }
-
-
