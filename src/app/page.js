@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800 mx-auto">
       <section className="main-section ">
         <Navbar />
         <div className="container h-screen flex flex-col-reverse  justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
@@ -91,23 +91,68 @@ export default function Home() {
               <img
                 src="/images/profile-img.jpg"
                 alt="profile-img"
-                className="w-[85%] md:w-[100%] h-[74%] md:h-[90%] md:rounded-tl-[30rem] rounded-bl-[20rem]  mt-7.5 md:mt-0" 
+                className="w-[85%] md:w-[100%] h-[74%] md:h-[90%]  rounded-tl-[30rem] sm:rounded-bl-[30rem] md:rounded-tl-[50rem] md:rounded-bl-none mt-7.5 md:mt-0"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="about-section">
-        <div className="about-container">
+      <section className="about-section ">
+        {/* Mobile view */}
+        <div class="about-mobile-container block md:hidden relative h-64 w-full bg-[url('/images/laptop-background.webp')] bg-cover bg-center bg-fixed">
+          <div class=" bg-black opacity-50 h-64 w-full">
+          <div className="about-text text-white text-center h-64 w-full flex flex-col justify-center items-center">
+            <h2 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
+              Who I Am?
+            </h2>
+            <p className="font-['Inter'] text-gray-400 mt-2 max-w-xl text-1xl md:text-3xl">
+              As a <span className="text-pink-600">Frontend Developer,</span>{" "}
+              I'm passionate about building user friendly interfaces that
+              enhance the digital experience. My problem-solving skills and
+              attention to detail drive me to innovative web slutions.{" "}
+            </p>
+          </div>
+          </div>
+        </div>
+{/* 
+        <div className="about-mobile-container bg-[url('/images/about-me.svg')] bg-cover bg-center h-64 w-full p-12">
+          <div className="about-text text-white text-center">
+            <h2 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
+              Who I Am?
+            </h2>
+            <p className="font-['Inter'] text-gray-400 mt-2 max-w-xl text-1xl md:text-3xl">
+              As a <span className="text-pink-600">Frontend Developer,</span>{" "}
+              I'm passionate about building user friendly interfaces that
+              enhance the digital experience. My problem-solving skills and
+              attention to detail drive me to innovative web slutions.{" "}
+            </p>
+          </div> */}
+        {/* </div> */}
+
+        {/* desktop-view */}
+        <div className="hidden md:block">
+        <div className="about-container flex justify-around items-center gap-5 px-12">
           <div className="about-img-div">
             <div className="about-img">
-              <img src="" className="" alt="about-img" />
+              <img
+                src="/images/about-me.svg"
+                className="md:w-[80%]"
+                alt="about-img"
+              />
             </div>
           </div>
-          <div className="about-text">
-            <p>about</p>
-            <h3>about div</h3>
+          <div className="about-text text-white">
+            <h2 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
+              Who I Am?
+            </h2>
+            <p className="font-['Inter'] text-gray-400 mt-2 max-w-xl text-1xl md:text-3xl">
+              As a <span className="text-pink-600">Frontend Developer,</span>{" "}
+              I'm passionate about building user friendly interfaces that
+              enhance the digital experience. My problem-solving skills and
+              attention to detail drive me to innovative web slutions.{" "}
+            </p>
           </div>
+        </div>
         </div>
       </section>
     </div>
