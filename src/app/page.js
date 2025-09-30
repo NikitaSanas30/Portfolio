@@ -4,77 +4,39 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="main-container bg-gradient-to-b from-gray-900 to-gray-800 mx-auto">
+    <div className="main-container ">
       <section className="main-section ">
-        <Navbar />
-        <div className="container h-screen flex flex-col-reverse  justify-center items-center md:flex-row mx-auto  bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-          <div className="main-text-div flex md:justify-between w-md-1/2 w-full px-9 py-9">
+        <div className="navbar pt-2 "> <Navbar /></div>
+       
+        <div className=" h-screen flex flex-col  justify-center items-center md:flex-row w-full bg-white text-black">
+          <div className="main-text-div flex md:justify-center w-md-1/2 w-full px-9 py-9">
             <div className="text-content flex flex-col justify-start items-start">
-              <h2 className="text-lg mb-2">👋 Hello, I’m Nikita</h2>
-              <h1 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
+              <span className=" px-3 text-sm border-amber-600 bg-[#ff000033] rounded-3xl"><h2 className="py-1">👋 Hello, I’m Nikita</h2></span>
+              <h1 className="font-['Montserrat'] hover:text-yellow-600 transition text-yellow-400 text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
                 Frontend Developer
               </h1>
-              <h3 className="font-['Montserrat'] text-3xl text-gray-200 font-semibold">
+              <h3 className="font-['Montserrat'] text-3xl text-black font-semibold">
                 Crafting digital experiences
               </h3>
-              <p className="font-['Inter'] text-gray-400 mt-2 max-w-xl">
+              <p className="font-['Inter'] text-black mt-2 max-w-xl">
                 Design & build modern, modern, responsive, and user-friendly web
                 applications with a passion for clean code and user centered
                 design.
               </p>
-              <div className="relative inline-flex items-center justify-center gap-4 group my-7">
-                <div className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
-                <a
-                  role="button"
-                  className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
-                  title="payment"
-                  href="#"
-                >
-                  View Projects
-                  <svg
-                    aria-hidden="true"
-                    viewBox="0 0 10 10"
-                    height="10"
-                    width="10"
-                    fill="none"
-                    className="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
-                  >
-                    <path
-                      d="M0 5h7"
-                      className="transition opacity-0 group-hover:opacity-100"
-                    ></path>
-                    <path
-                      d="M1 1l4 4-4 4"
-                      className="transition group-hover:translate-x-[3px]"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  role="button"
-                  className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
-                  title="payment"
-                  href="#"
-                >
-                  Contact Me
-                  <svg
-                    aria-hidden="true"
-                    viewBox="0 0 10 10"
-                    height="10"
-                    width="10"
-                    fill="none"
-                    className="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
-                  >
-                    <path
-                      d="M0 5h7"
-                      className="transition opacity-0 group-hover:opacity-100"
-                    ></path>
-                    <path
-                      d="M1 1l4 4-4 4"
-                      className="transition group-hover:translate-x-[3px]"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
+               <div className="flex space-x-4 pt-4">
+      <a
+        href="#"
+        className="px-6 py-2 rounded-full border-yellow-400 bg-[#0b3d2e] text-[yellow] font-semibold hover:bg-yellow-300 hover:text-[#0b3d2e]"
+      >
+        Download CV
+      </a>
+      <a
+        href="#"
+        className="px-6 py-2 rounded-full border-yellow-400 bg-[#0b3d2e] text-[yellow] font-semibold hover:bg-yellow-300 hover:text-[#0b3d2e]"
+      >
+        Contact Me
+      </a>
+    </div>
             </div>
           </div>
           {/* <div className="main-img-div flex justify-end md:justify-center w-1/2 items-end md:items-center">
@@ -86,7 +48,7 @@ export default function Home() {
               />
             </div>
           </div> */}
-          <div className="main-img-div w-full h-full">
+          {/* <div className="main-img-div w-full h-full">
             <div className="profile-img  w-full h-full flex justify-end">
               <img
                 src="/images/profile-img.jpg"
@@ -94,19 +56,43 @@ export default function Home() {
                 className="w-[85%] md:w-[100%] h-[74%] md:h-[90%]  rounded-tl-[30rem] sm:rounded-bl-[30rem] md:rounded-tl-[50rem] md:rounded-bl-none mt-7.5 md:mt-0"
               />
             </div>
-          </div>
+          </div> */}
+           <div className="main-img-div w-full h-full">
+  <div className="profile-img w-full h-full flex ">
+    <img
+      src="/images/profile-img.jpg"
+      alt="profile-img"
+      className="
+        w-[85%] md:w-[100%] 
+        h-[74%] md:h-[90%] 
+        object-cover
+         
+         rounded-tl-[45rem]
+        rounded-tr-[0] 
+        rounded-bl-[0] 
+        rounded-br-[0]
+
+        md:rounded-tl-[45rem]
+        md:rounded-tr-[0] 
+        md:rounded-bl-[0] 
+        md:rounded-br-[0]
+      "
+    />
+  </div>
+</div>
+
         </div>
       </section>
       <section className="about-section ">
         {/* Mobile view */}
-        <div class="about-mobile-container block md:hidden relative h-64 w-full bg-[url('/images/laptop-background.webp')] bg-cover bg-center bg-fixed">
-          <div class=" bg-black opacity-50 h-64 w-full">
-          <div className="about-text text-white text-center h-64 w-full flex flex-col justify-center items-center">
+        <div class="about-mobile-container  block md:hidden relative h-64 w-full bg-[url('/images/laptop-background.webp')] bg-cover bg-center bg-fixed">
+          <div class=" bg-white opacity-50 h-64 w-full">
+          <div className="about-text text-black text-center h-64 w-full flex flex-col justify-center items-center">
             <h2 className="font-['Montserrat'] text-3xl md:text-6xl font-extrabold leading-8 md:leading-13">
               Who I Am?
             </h2>
-            <p className="font-['Inter'] text-gray-400 mt-2 max-w-xl text-1xl md:text-3xl">
-              As a <span className="text-pink-600">Frontend Developer,</span>{" "}
+            <p className="font-['Inter'] text-black-400 mt-2 max-w-xl text-1xl md:text-3xl">
+              As a <span className="text-yellow-600">Frontend Developer,</span>{" "}
               I'm passionate about building user friendly interfaces that
               enhance the digital experience. My problem-solving skills and
               attention to detail drive me to innovative web slutions.{" "}
@@ -131,7 +117,7 @@ export default function Home() {
 
         {/* desktop-view */}
         <div className="hidden md:block">
-        <div className="about-container flex justify-around items-center gap-5 px-12">
+        <div className="about-container flex py-10 justify-around items-center gap-5 px-12">
           <div className="about-img-div">
             <div className="about-img">
               <img

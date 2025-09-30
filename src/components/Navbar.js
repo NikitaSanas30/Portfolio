@@ -4,133 +4,69 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100 ">
-      <div className="max-w-7xl mx-auto position-sticky">
-        <div className="flex justify-between">
-     
-          <div className="flex space-x-4">
-            {/* Logo */}
-            <div>
-              <a
-                href="#"
-                className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
-              >
-                <img src="/images/NS_logo.jpg" alt="logo" className="w-12 h-12 rounded-full"/>
-                {/* <svg
-                  className="h-6 w-6 mr-1 text-blue-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                  />
-                </svg> */}
-                {/* <span className="font-bold">Better Dev</span> */}
-              </a>
-            </div>
-
-            {/* Primary Nav */}
-            <div className="hidden md:flex items-center space-x-1">
-              <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                About
-              </a>
-               <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                Project
-              </a>
-               <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                Contact
-              </a>
-            </div>
+    <nav className="">
+      <div className="max-w-7xl mx-auto bg-[#0b3d2e] text-white shadow-md rounded-4xl px-6">
+        <div className="flex justify-between items-center py-2">
+      
+          <div className="flex items-center space-x-2">
+            <img
+              src="/images/NS_logo.jpg"
+              alt="logo"
+              className="w-12 h-12 rounded-full border-2 border-yellow-400"
+            />
+            <span className="text-lg font-bold text-yellow-400">Nikita</span>
           </div>
 
-          {/* Right section - Login/Signup */}
-          <div className="hidden md:flex items-center space-x-1">
-            <a href="#" className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">
-              Download CV
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-yellow-400 border-b-2 border-yellow-400 pb-1">
+              Home
             </a>
+            <a href="#" className="hover:text-yellow-400 transition">Services</a>
+            <a href="#" className="hover:text-yellow-400 transition">Work</a>
+            <a href="#" className="hover:text-yellow-400 transition">Projects</a>
+            <a href="#" className="hover:text-yellow-400 transition">Blog</a>
+            <a href="#" className="hover:text-yellow-400 transition">Testimonials</a>
+          </div>
+          <div className="hidden md:flex">
             <a
               href="#"
-              className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+              className="px-5 py-2 rounded-full border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#0b3d2e] transition"
             >
               Connect
             </a>
           </div>
 
-          {/* Mobile Button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="mobile-menu-button"
-            >
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 text-yellow-400"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
               </svg>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="mobile-menu md:hidden ">
+        <div className="md:hidden bg-[#0b3d2e] text-white px-6 pb-4 space-y-2">
+          <a href="#" className="block text-yellow-400">Home</a>
+          <a href="#" className="block hover:text-yellow-400">Services</a>
+          <a href="#" className="block hover:text-yellow-400">Work</a>
+          <a href="#" className="block hover:text-yellow-400">Projects</a>
+          <a href="#" className="block hover:text-yellow-400">Blog</a>
+          <a href="#" className="block hover:text-yellow-400">Testimonials</a>
           <a
             href="#"
-            className="block py-2 px-4 text-sm hover:bg-gray-200 border-b-gray-600 h-8"
+            className="block text-center mt-2 px-4 py-2 rounded-full border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-[#0b3d2e] transition"
           >
-           Home
+            Connect
           </a>
-          <a
-            href="#"
-            className="block py-2 px-4 text-sm hover:bg-gray-200 border-b-gray-600 h-8"
-          >
-           About
-          </a>
-          <a
-            href="#"
-            className="block py-2 px-4 text-sm hover:bg-gray-200 border-b-gray-600 h-8"
-          >
-           Project
-          </a>
-          <a
-            href="#"
-            className="block py-2 px-4 text-sm hover:bg-gray-200 border-b-gray-600 h-8"
-          >
-           Contact
-          </a>
-         
         </div>
-        
       )}
     </nav>
   );
