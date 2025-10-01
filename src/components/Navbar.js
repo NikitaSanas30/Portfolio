@@ -5,16 +5,16 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="max-w-7xl mx-auto bg-[#0b3d2e] text-white shadow-md rounded-4xl px-6">
+      <div className=" bg-[#0b3d2e] text-white shadow-md rounded-4xl px-6">
         <div className="flex justify-between items-center py-2">
       
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center ">
             <img
               src="/images/NS_logo.jpg"
               alt="logo"
               className="w-12 h-12 rounded-full border-2 border-yellow-400"
             />
-            <span className="text-lg font-bold text-yellow-400">Nikita</span>
+            {/* <span className="text-lg font-bold text-yellow-400">Nikita</span> */}
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
